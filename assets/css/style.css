@@ -217,7 +217,7 @@ h2::after {
 
 .navbar-nav {
   display:flex;
-  gap:40px;   /* increase spacing */
+  gap:80px;   /* increase spacing */
 }
 
 
