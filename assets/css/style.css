@@ -82,7 +82,7 @@ a:hover {
   padding: 180px 20px 140px;
   color: #ffffff;
   background-image: url("../images/bg.jpg");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
