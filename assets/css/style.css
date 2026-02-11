@@ -283,7 +283,7 @@ h2 {
 
 /* DEFAULT NAVBAR (scrolled state) */
 .navbar {
-  background-color: #e9ecef;   /* light grey */
+  background-color: #f1f3f5;   /* light grey */
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -312,7 +312,7 @@ h2 {
 .sponsors-section {
   width: 100%;
   padding: 90px 0;
-  background-color: #e9ecef;   /* middle grey */
+  background-color: #f1f3f5;   /* middle grey */
 }
 
 .section-subtitle {
