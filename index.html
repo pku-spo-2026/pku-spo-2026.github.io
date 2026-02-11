@@ -245,6 +245,25 @@ function updateNavbar() {
 updateNavbar();
 window.addEventListener("scroll", updateNavbar);
 </script>
+
+
+<script>
+function showSchedule(dayId) {
+
+  document.querySelectorAll(".schedule-day").forEach(day=>{
+    day.classList.remove("active");
+  });
+
+  document.querySelectorAll(".schedule-tab").forEach(tab=>{
+    tab.classList.remove("active");
+  });
+
+  document.getElementById(dayId).classList.add("active");
+
+  event.target.classList.add("active");
+}
+</script>
+
 </body>
 
 
