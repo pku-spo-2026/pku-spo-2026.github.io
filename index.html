@@ -235,20 +235,37 @@ window.addEventListener("scroll", updateNavbar);
 
 
 <script>
-function showSchedule(dayId) {
+const scheduleData = {
+  day1: [
+    {time: "09:00", session: "Opening Remarks"},
+    {time: "10:00", session: "Keynote Talk"}
+  ],
+  day2: [
+    {time: "09:00", session: "Workshop Session"},
+    {time: "14:00", session: "Panel Discussion"}
+  ],
+  day3: [
+    {time: "10:00", session: "Poster Session"},
+    {time: "15:00", session: "Closing Ceremony"}
+  ]
+};
 
-  document.querySelectorAll(".schedule-day").forEach(day=>{
-    day.classList.remove("active");
+const tabs = document.querySelectorAll(".schedule-tab");
+const tableBody = document.querySelector("#schedule-table tbody");
+
+tabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+    // Remove active from all tabs
+    tabs.forEach(t => t.classList.remove("active"));
+    tab.classList.add("active");
+
+    const day = tab.dataset.day;
+    const rows = scheduleData[day].map(item => 
+      `<tr><td>${item.time}</td><td>${item.session}</td></tr>`).join("");
+
+    tableBody.innerHTML = rows;
   });
-
-  document.querySelectorAll(".schedule-tab").forEach(tab=>{
-    tab.classList.remove("active");
-  });
-
-  document.getElementById(dayId).classList.add("active");
-
-  event.target.classList.add("active");
-}
+});
 </script>
 
 </body>
