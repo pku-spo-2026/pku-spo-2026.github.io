@@ -53,6 +53,7 @@ a:hover {
   position: relative;
   width: 100%;
   min-height: 80vh;
+   margin-top: -80px;
   background-image: url("../images/bg.jpg");  /* change path */
   background-size: cover;
   background-position: center;
