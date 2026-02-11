@@ -114,6 +114,10 @@ h2::after {
   margin-top: 10px;
 }
 
+.sponsors-section h2::after {
+  display: none;
+}
+
 /* ================================
    Speaker Cards
 ================================ */
