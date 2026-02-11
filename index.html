@@ -51,8 +51,10 @@
 <p>[Conference description placeholder]</p>
 </section>
 
+  
+
 <!-- SCHEDULE -->
-<section id="schedule" class="container section">
+<!-- <section id="schedule" class="container section">
 <h2>SCHEDULE</h2>
 
 <table class="table">
@@ -60,7 +62,58 @@
 <tr><td>TBD</td><td>TBD</td></tr>
 </table>
 
+</section> -->
+
+<!-- SCHEDULE -->
+<section id="schedule" class="schedule-section">
+
+  <div class="container">
+
+    <h2>SCHEDULE</h2>
+
+    <!-- DATE TABS -->
+    <div class="schedule-tabs">
+      <button class="schedule-tab active" onclick="showSchedule('day1')">Day 1</button>
+      <button class="schedule-tab" onclick="showSchedule('day2')">Day 2</button>
+      <button class="schedule-tab" onclick="showSchedule('day3')">Day 3</button>
+    </div>
+
+    <!-- DAY 1 -->
+    <div id="day1" class="schedule-day active">
+      <table class="schedule-table">
+        <tr><th>Time</th><th>Session</th></tr>
+        <tr><td>09:00</td><td>Opening Remarks</td></tr>
+        <tr><td>10:00</td><td>Keynote Talk</td></tr>
+      </table>
+    </div>
+
+    <!-- DAY 2 -->
+    <div id="day2" class="schedule-day">
+      <table class="schedule-table">
+        <tr><th>Time</th><th>Session</th></tr>
+        <tr><td>09:00</td><td>Workshop Session</td></tr>
+        <tr><td>14:00</td><td>Panel Discussion</td></tr>
+      </table>
+    </div>
+
+    <!-- DAY 3 -->
+    <div id="day3" class="schedule-day">
+      <table class="schedule-table">
+        <tr><th>Time</th><th>Session</th></tr>
+        <tr><td>10:00</td><td>Poster Session</td></tr>
+        <tr><td>15:00</td><td>Closing Ceremony</td></tr>
+      </table>
+    </div>
+
+  </div>
 </section>
+
+
+
+
+
+
+  
 
 <!-- SPEAKERS -->
 <section id="speakers" class="container section">
