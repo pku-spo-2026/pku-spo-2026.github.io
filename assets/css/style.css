@@ -133,7 +133,7 @@ h2::after {
 .speaker-card img {
   width:140px;
   height:140px;
-  border-radius:12px;   /* clean professional look */
+  border-radius:50%;   /* ⭐ circle instead of rounded square */
   object-fit:cover;
   margin-bottom:15px;
 }
