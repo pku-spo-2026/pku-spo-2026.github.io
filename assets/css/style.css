@@ -119,6 +119,69 @@ h2 {
 }
 
 /* ================================
+   Schedule Section
+================================ */
+
+.schedule-section {
+  padding: 90px 0;
+  background-color: #ffffff;
+}
+
+/* DATE TABS */
+.schedule-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.schedule-tab {
+  padding: 10px 20px;
+  border: 1px solid #dee2e6;
+  background: #f8f9fa;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+}
+
+.schedule-tab.active {
+  background: #212529;
+  color: white;
+  border-color: #212529;
+}
+
+/* TABLE */
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.schedule-table th {
+  text-align: left;
+  background: #f1f3f5;
+  padding: 14px;
+  font-weight: 600;
+}
+
+.schedule-table td {
+  padding: 14px;
+  border-top: 1px solid #e9ecef;
+}
+
+/* DAY VISIBILITY */
+.schedule-day {
+  display: none;
+}
+
+.schedule-day.active {
+  display: block;
+}
+
+
+/* ================================
    Speaker Cards
 ================================ */
 
