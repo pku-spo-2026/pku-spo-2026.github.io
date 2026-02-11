@@ -276,7 +276,14 @@ h2::after {
 }
 
 
+/* sponsors fixes */
+.sponsors-section .container {
+  background: transparent;
+}
 
+.sponsors-section h2::after {
+  display: none !important;
+}
 
 
 
