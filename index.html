@@ -12,7 +12,7 @@
 const navbar = document.querySelector(".navbar");
 
 function updateNavbar() {
-  if (window.scrollY === 0) {
+  if (window.scrollY < 50) {
     navbar.classList.add("top");
   } else {
     navbar.classList.remove("top");
@@ -28,7 +28,7 @@ window.addEventListener("scroll", updateNavbar);
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar top fixed-top border-bottom">
+<nav class="navbar top fixed-top">
   <div class="container navbar-inner">
 
     <a class="navbar-brand" href="#">PKU SPO 2026</a>
