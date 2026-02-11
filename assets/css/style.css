@@ -114,6 +114,15 @@ h2 {
   margin-top: 10px;
 }
 
+.schedule-section h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #0d6efd;
+  margin-top: 10px;
+}
+
 .sponsors-section h2::after {
   display: none;
 }
