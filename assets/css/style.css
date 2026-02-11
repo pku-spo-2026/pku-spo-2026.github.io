@@ -45,103 +45,6 @@ a:hover {
   background-color: #f8f9fa;
 }
 
-/* ================================
-   Hero Section
-================================ */
-
-/* .hero {
-  padding:160px 20px;
-  text-align:center;
-  color:white;
-  background-image:url("../images/bg.jpg");
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
-  position:relative;
-}
-
-.hero h1 {
-  font-size: 2.6rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  color: #495057;
-  max-width: 700px;
-  margin: 0 auto;
-} */
-
-/* ================================
-   Modern Conference Hero
-================================ */
-
-.hero {
-  position: relative;
-  padding: 180px 20px 140px;
-  color: #ffffff;
-  background-image: url("../images/bg.jpg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-}
-
-/* dark gradient overlay */
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(0,0,0,0.75) 0%,
-    rgba(0,0,0,0.55) 40%,
-    rgba(0,0,0,0.25) 70%,
-    rgba(0,0,0,0.10) 100%
-  );
-}
-
-/* content wrapper */
-.hero-content {
-  position: relative;
-  max-width: 720px;
-  z-index: 2;
-}
-
-/* small label */
-.hero-tagline {
-  font-size: 0.9rem;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-  opacity: 0.85;
-  margin-bottom: 15px;
-}
-
-/* title */
-.hero h1 {
-  font-size: 3.2rem;
-  font-weight: 700;
-   opacity: 0.95;
-  margin-bottom: 18px;
-  line-height: 1.2;
-}
-
-/* date/location */
-.hero-meta {
-  font-size: 1.1rem;
-  opacity: 0.95;
-  margin-bottom: 28px;
-}
-
-/* description */
-.hero p {
-  font-size: 1.15rem;
-  color: rgba(255,255,255,0.9);
-  margin-bottom: 32px;
-}
-
 
 
 /* ================================
@@ -180,55 +83,8 @@ h2::after {
   border:none;
 }
 
-/* .speaker-card {
-  padding: 25px;
-  border-radius: 14px;
-  background: #ffffff;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-  text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.speaker-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.10);
-} */
 
 .speaker-card img {
-  width:140px;
-  height:140px;
-  border-radius:12px;   /* clean professional look */
-  object-fit:cover;
-  margin-bottom:15px;
-}
-
-/* ================================
-   Organizer Cards
-================================ */
-
-.organizer-card {
-  padding:10px 0;
-  text-align:center;
-  background:none;
-  box-shadow:none;
-  border:none;
-}
-
-/* .organizer-card {
-  padding: 25px;
-  border-radius: 14px;
-  background: #ffffff;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-  text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.organizer-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.10);
-} */
-
-.organizer-card img {
   width:140px;
   height:140px;
   border-radius:12px;   /* clean professional look */
