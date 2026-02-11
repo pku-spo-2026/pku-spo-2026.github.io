@@ -53,7 +53,7 @@ a:hover {
   padding:160px 20px;
   text-align:center;
   color:white;
-  background-image:url("images/bg.jpg");
+  background-image:url("../images/bg.jpg");
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
