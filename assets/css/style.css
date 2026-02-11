@@ -111,12 +111,39 @@ h2::after {
 }
 
 .speaker-card img {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 15px;
+  width:140px;
+  height:140px;
+  border-radius:12px;   /* clean professional look */
+  object-fit:cover;
+  margin-bottom:15px;
 }
+
+/* ================================
+   Organizer Cards
+================================ */
+
+.organizer-card {
+  padding: 25px;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.organizer-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.10);
+}
+
+.organizer-card img {
+  width:140px;
+  height:140px;
+  border-radius:12px;   /* clean professional look */
+  object-fit:cover;
+  margin-bottom:15px;
+}
+
 
 /* ================================
    Buttons (Optional but Useful)
