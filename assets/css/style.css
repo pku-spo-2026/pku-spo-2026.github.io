@@ -72,22 +72,23 @@ a:hover {
 }
 
 /* keep content above overlay */
-.hero-content {
-  position: relative;   /* ⭐ prevents dark layer covering text */
-  z-index: 2;
-  text-align: center;
+.hero-text {
+  max-width: 650px;
+  color: white;
+  margin-left: 35%;   /* ⭐ moves text right like your design */
+}
+
+.hero-text h1 {
+  font-size: 3.2rem;
+  line-height: 1.2;
+  margin-bottom: 30px;
   color: white;
 }
 
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  color: white;
-}
-
-.hero-content p {
-  font-size: 1.25rem;
-  margin-bottom: 25px;
+.hero-date,
+.hero-location {
+  font-size: 1.4rem;
+  margin: 8px 0;
 }
 
 
