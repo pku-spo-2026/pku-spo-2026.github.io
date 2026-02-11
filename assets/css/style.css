@@ -234,8 +234,9 @@ h2::after {
 ================================ */
 
 .sponsors-section {
-  background: #ffffff;
-  padding: 80px 0;
+  width: 100%;
+  padding: 90px 0;
+  background-color: #e9ecef;   /* middle grey */
 }
 
 .section-subtitle {
