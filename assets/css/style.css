@@ -211,7 +211,7 @@ h2 {
 
 /* DEFAULT NAVBAR (scrolled state) */
 .navbar {
-  background-color: #f1f3f5;   /* light grey */
+  background-color: #e9ecef;   /* light grey */
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
