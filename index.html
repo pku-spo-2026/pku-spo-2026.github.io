@@ -3,23 +3,17 @@
 <head>
 <meta charset="utf-8">
 <title>PKU SPO 2026</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<style>
-body { font-family: Arial, sans-serif; }
-section { padding: 60px 0; }
-.navbar { background-color:#ffffff; }
-.hero { text-align:center; padding:80px 20px; }
-.speaker-card img { width:120px; border-radius:50%; }
-</style>
+<link href="assets/css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg fixed-top border-bottom">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top border-bottom bg-white">
 <div class="container">
 <a class="navbar-brand" href="#">PKU SPO 2026</a>
 
@@ -35,26 +29,34 @@ section { padding: 60px 0; }
 </nav>
 
 <!-- HERO -->
-<div class="hero">
+<section class="hero">
+<div class="container text-center">
 <h1>PKU SPO 2026</h1>
 <p>[Tagline Placeholder]</p>
 <p>[Date Placeholder] — [Location Placeholder]</p>
 </div>
+</section>
 
 <!-- ABOUT -->
-<section id="about" class="container">
+<section id="about" class="container section">
 <h2>About</h2>
-<p>[Description placeholder]</p>
+<p>[Conference description placeholder]</p>
 </section>
 
 <!-- SPEAKERS -->
-<section id="speakers" class="container">
+<section id="speakers" class="container section">
 <h2>Invited Speakers</h2>
 
 <div class="row">
 
 <div class="col-md-3 speaker-card text-center">
-<img src="assets/images/speaker.jpg">
+<img src="assets/images/speaker-placeholder.jpg">
+<h5>Speaker Name</h5>
+<p>Affiliation</p>
+</div>
+
+<div class="col-md-3 speaker-card text-center">
+<img src="assets/images/speaker-placeholder.jpg">
 <h5>Speaker Name</h5>
 <p>Affiliation</p>
 </div>
@@ -63,25 +65,33 @@ section { padding: 60px 0; }
 </section>
 
 <!-- PROGRAMME -->
-<section id="programme" class="container">
+<section id="programme" class="container section">
 <h2>Programme</h2>
-<p>[Schedule Placeholder]</p>
+
+<table class="table">
+<tr><th>Time</th><th>Session</th></tr>
+<tr><td>TBD</td><td>TBD</td></tr>
+</table>
+
 </section>
 
 <!-- ORGANIZERS -->
-<section id="organizers" class="container">
+<section id="organizers" class="container section">
 <h2>Organizing Committee</h2>
-<p>[Organizers Placeholder]</p>
+<ul>
+<li>[Organizer Placeholder]</li>
+<li>[Organizer Placeholder]</li>
+</ul>
 </section>
 
 <!-- LOCATION -->
-<section id="location" class="container">
+<section id="location" class="container section">
 <h2>Location</h2>
 <p>[Venue Placeholder]</p>
 </section>
 
 <!-- REGISTRATION -->
-<section id="registration" class="container">
+<section id="registration" class="container section">
 <h2>Registration</h2>
 <p>[Registration Placeholder]</p>
 </section>
