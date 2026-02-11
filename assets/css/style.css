@@ -186,7 +186,6 @@ h2::after {
   display: flex;
   align-items: center;
   justify-content: space-between;
-   color: #f8f9fa;
 }
 
 /* MENU GROUP */
@@ -205,6 +204,31 @@ h2::after {
 .nav-link:hover {
   color: #0d6efd;
 }
+
+/* DEFAULT NAVBAR (scrolled state) */
+.navbar {
+  background-color: #f1f3f5;   /* light grey */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* TOP OF PAGE NAVBAR */
+.navbar.top {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/* optional: darker links when scrolled */
+.navbar.top .nav-link,
+.navbar.top .navbar-brand {
+  color: white;
+}
+
+/* normal state links */
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: #212529;
+}
+
 
 
 
