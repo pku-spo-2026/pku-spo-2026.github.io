@@ -182,7 +182,7 @@ h2::after {
    Navbar Enhancement (if exists)
 ================================ */
 
-/* .navbar-inner {
+.navbar-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -227,56 +227,6 @@ h2::after {
 .navbar .nav-link,
 .navbar .navbar-brand {
   color: #212529;
-} */
-
-/* NAVBAR BASE */
-.navbar {
-  transition: all 0.35s ease;
-}
-
-/* TOP HERO STATE (like efficient-reasoning) */
-.navbar.top {
-  background: transparent;
-  border-bottom: none;
-  box-shadow: none;
-}
-
-/* TEXT ON HERO */
-.navbar.top .nav-link,
-.navbar.top .navbar-brand {
-  color: white;
-}
-
-/* SCROLLED STATE */
-.navbar:not(.top) {
-  background: rgba(255,255,255,0.85);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0,0,0,0.06);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-}
-
-/* TEXT AFTER SCROLL */
-.navbar:not(.top) .nav-link,
-.navbar:not(.top) .navbar-brand {
-  color: #212529;
-}
-
-/* NAVBAR LAYOUT */
-.navbar-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.nav-menu {
-  display: flex;
-  gap: 40px;
-}
-
-.nav-link {
-  font-weight: 500;
-  text-decoration: none;
-  transition: color 0.25s ease;
 }
 
 
