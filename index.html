@@ -69,9 +69,9 @@
 
     <!-- DATE TABS -->
     <div class="schedule-tabs">
-      <button class="schedule-tab active" data-day="day1">Day 1</button>
-      <button class="schedule-tab" data-day="day2">Day 2</button>
-      <button class="schedule-tab" data-day="day3">Day 3</button>
+      <button class="schedule-tab active" data-day="day1">Jun 1</button>
+      <button class="schedule-tab" data-day="day2">Jun 2</button>
+      <button class="schedule-tab" data-day="day3">Jun 3</button>
     </div>
 
     <!-- SCHEDULE TABLE -->
@@ -83,6 +83,15 @@
         <tbody>
           <tr><td>09:00-09:15</td><td>Opening Remarks</td></tr>
           <tr><td>09:15-10:00</td><td>Talk 1</td></tr>
+          <tr><td>10:00-10:30</td><td>Tea Break</td></tr>
+          <tr><td>10:30-11:15</td><td>Talk 2</td></tr>
+          <tr><td>11:15-12:00</td><td>Talk 3</td></tr>
+          <tr><td>12:00-14:30</td><td>Lunch</td></tr>
+          <tr><td>14:30-15:15</td><td>Talk 4</td></tr>
+          <tr><td>15:15-16:00</td><td>Talk 5</td></tr>
+          <tr><td>16:00-16:30</td><td>Tea Break</td></tr>
+          <tr><td>16:30-17:15</td><td>Talk 6</td></tr>
+          <tr><td>17:15-18:00</td><td>Talk 7</td></tr>
         </tbody>
       </table>
     </div>
@@ -236,15 +245,38 @@ window.addEventListener("scroll", updateNavbar);
 const scheduleData = {
   day1: [
     {time: "09:00-09:15", session: "Opening Remarks"},
-    {time: "09:15-10:00", session: "Talk 1"}
+    {time: "09:15-10:00", session: "Talk 1"},
+    {time: "10:00-10:30", session: "Tea Break"},
+    {time: "10:30-11:15", session: "Talk 2"},
+    {time: "11:15-12:00", session: "Talk 3"},
+    {time: "12:00-14:30", session: "Lunch"},
+    {time: "14:30-15:15", session: "Talk 4"},
+    {time: "15:15-16:00", session: "Talk 5"},
+    {time: "16:00-16:30", session: "Tea Break"},
+    {time: "16:30-17:15", session: "Talk 6"},
+    {time: "17:15-18:00", session: "Talk 7"}
   ],
   day2: [
-    {time: "09:00", session: "TBD"},
-    {time: "14:00", session: "TBD"}
+    {time: "08:30-09:15", session: "Talk 8"},
+    {time: "09:15-10:00", session: "Talk 9"},
+    {time: "10:00-10:30", session: "Tea Break"},
+    {time: "10:30-11:15", session: "Talk 10"},
+    {time: "11:15-12:00", session: "Talk 11"},
+    {time: "12:00-14:30", session: "Lunch"},
+    {time: "14:30-18:00", session: "Free Discussion"}
   ],
   day3: [
-    {time: "10:00", session: "TBD"},
-    {time: "15:00", session: "TBD"}
+    {time: "08:30-09:15", session: "Talk 12"},
+    {time: "09:15-10:00", session: "Talk 13"},
+    {time: "10:00-10:30", session: "Tea Break"},
+    {time: "10:30-11:15", session: "Talk 14"},
+    {time: "11:15-12:00", session: "Talk 15"},
+    {time: "12:00-14:30", session: "Lunch"},
+    {time: "14:30-15:15", session: "Talk 16"},
+    {time: "15:15-16:00", session: "Talk 17"},
+    {time: "16:00-16:30", session: "Tea Break"},
+    {time: "16:30-17:15", session: "Talk 18"},
+    {time: "17:15-18:00", session: "Talk 19"}
   ]
 };
 
