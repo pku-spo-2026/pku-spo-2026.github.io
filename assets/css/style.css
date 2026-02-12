@@ -170,7 +170,7 @@ h2 {
 
 .schedule-table th {
   text-align: left;
-  background: #e9ecef;
+   background: transparent;
   padding: 14px;
   font-weight: 700;
    border-bottom: 2px solid #adb5bd;
