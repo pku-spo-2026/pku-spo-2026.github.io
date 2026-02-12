@@ -254,39 +254,39 @@ window.addEventListener("scroll", updateNavbar);
 <script>
 const scheduleData = {
   day1: [
-    {time: "09:00-09:15", session: "Opening Remarks"},
-    {time: "09:15-10:00", session: "Talk 1"},
-    {time: "10:00-10:30", session: "Tea Break"},
-    {time: "10:30-11:15", session: "Talk 2"},
-    {time: "11:15-12:00", session: "Talk 3"},
-    {time: "12:00-14:30", session: "Lunch"},
-    {time: "14:30-15:15", session: "Talk 4"},
-    {time: "15:15-16:00", session: "Talk 5"},
-    {time: "16:00-16:30", session: "Tea Break"},
-    {time: "16:30-17:15", session: "Talk 6"},
-    {time: "17:15-18:00", session: "Talk 7"}
+    {time: "09:00-09:15", session: "Opening Remarks", type:"talk"},
+    {time: "09:15-10:00", session: "Talk 1", type:"talk"},
+    {time: "10:00-10:30", session: "Tea Break", type:"break"},
+    {time: "10:30-11:15", session: "Talk 2", type:"talk"},
+    {time: "11:15-12:00", session: "Talk 3", type:"talk"},
+    {time: "12:00-14:30", session: "Lunch", type:"break"},
+    {time: "14:30-15:15", session: "Talk 4", type:"talk"},
+    {time: "15:15-16:00", session: "Talk 5", type:"talk"},
+    {time: "16:00-16:30", session: "Tea Break", type:"break"},
+    {time: "16:30-17:15", session: "Talk 6", type:"talk"},
+    {time: "17:15-18:00", session: "Talk 7", type:"talk"}
   ],
   day2: [
-    {time: "08:30-09:15", session: "Talk 8"},
-    {time: "09:15-10:00", session: "Talk 9"},
-    {time: "10:00-10:30", session: "Tea Break"},
-    {time: "10:30-11:15", session: "Talk 10"},
-    {time: "11:15-12:00", session: "Talk 11"},
-    {time: "12:00-14:30", session: "Lunch"},
-    {time: "14:30-18:00", session: "Free Discussion"}
+    {time: "08:30-09:15", session: "Talk 8", type:"talk"},
+    {time: "09:15-10:00", session: "Talk 9", type:"talk"},
+    {time: "10:00-10:30", session: "Tea Break", type:"break"},
+    {time: "10:30-11:15", session: "Talk 10", type:"talk"},
+    {time: "11:15-12:00", session: "Talk 11", type:"talk"},
+    {time: "12:00-14:30", session: "Lunch", type:"break"},
+    {time: "14:30-18:00", session: "Free Discussion", type:"talk"}
   ],
   day3: [
-    {time: "08:30-09:15", session: "Talk 12"},
-    {time: "09:15-10:00", session: "Talk 13"},
-    {time: "10:00-10:30", session: "Tea Break"},
-    {time: "10:30-11:15", session: "Talk 14"},
-    {time: "11:15-12:00", session: "Talk 15"},
-    {time: "12:00-14:30", session: "Lunch"},
-    {time: "14:30-15:15", session: "Talk 16"},
-    {time: "15:15-16:00", session: "Talk 17"},
-    {time: "16:00-16:30", session: "Tea Break"},
-    {time: "16:30-17:15", session: "Talk 18"},
-    {time: "17:15-18:00", session: "Talk 19"}
+    {time: "08:30-09:15", session: "Talk 12", type:"talk"},
+    {time: "09:15-10:00", session: "Talk 13", type:"talk"},
+    {time: "10:00-10:30", session: "Tea Break", type:"break"},
+    {time: "10:30-11:15", session: "Talk 14", type:"talk"},
+    {time: "11:15-12:00", session: "Talk 15", type:"talk"},
+    {time: "12:00-14:30", session: "Lunch", type:"break"},
+    {time: "14:30-15:15", session: "Talk 16", type:"talk"},
+    {time: "15:15-16:00", session: "Talk 17", type:"talk"},
+    {time: "16:00-16:30", session: "Tea Break", type:"break"},
+    {time: "16:30-17:15", session: "Talk 18", type:"talk"},
+    {time: "17:15-18:00", session: "Talk 19", type:"talk"}
   ]
 };
 
@@ -301,7 +301,11 @@ tabs.forEach(tab => {
 
     const day = tab.dataset.day;
     const rows = scheduleData[day].map(item => 
-      `<tr><td>${item.time}</td><td>${item.session}</td></tr>`).join("");
+        `<tr class="${item.type}">
+           <td>${item.time}</td>
+           <td>${item.session}</td>
+         </tr>`
+      ).join("");
 
     tableBody.innerHTML = rows;
   });
