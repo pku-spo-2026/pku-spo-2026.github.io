@@ -180,6 +180,17 @@ h2 {
   border-top: 1px solid #e9ecef;
 }
 
+/* TALKS */
+.schedule-table tr.talk {
+  background-color: #ffffff;
+}
+
+/* BREAKS (tea + lunch together) */
+.schedule-table tr.break {
+  background-color: #f1f3f5;
+  font-style: italic;
+}
+
 /* DAY VISIBILITY */
 .schedule-day {
   display: none;
