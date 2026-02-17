@@ -343,18 +343,15 @@ h2 {
 
 /* LOGOS */
 .sponsor-grid img {
-  height: 90px;
+  height: 110px;
   max-width: 240px;
   object-fit: contain;
-
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 /* HOVER EFFECT */
 .sponsor-grid img:hover {
-  filter: grayscale(0%);
-  opacity: 1;
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 
