@@ -344,7 +344,7 @@ h2 {
 /* LOGOS */
 .sponsor-grid img {
   height: 110px;
-  max-width: 240px;
+  max-width: 200px;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
