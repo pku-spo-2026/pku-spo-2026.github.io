@@ -75,6 +75,8 @@ a:hover {
   margin-left: 35%;   /* ⭐ moves text right like your design */
 }
 
+
+
 .hero-text h1 {
   font-size: 3.2rem;
   line-height: 1.2;
@@ -132,7 +134,7 @@ h2 {
 ================================ */
 
 .schedule-section {
-  padding: 90px 0;
+  padding: 80px 0;
   background-color: #ffffff;
 }
 
@@ -173,11 +175,12 @@ h2 {
    background: transparent;
   padding: 14px;
   font-weight: 700;
+   font-size: 15px;
    border-bottom: 2px solid #adb5bd;
 }
 
 .schedule-table td {
-  padding: 14px;
+  padding: 16px 14px;
   border-top: 1px solid #e9ecef;
 }
 
@@ -324,7 +327,7 @@ h2 {
 .sponsors-section {
   width: 100%;
   padding: 60px 0;
-  background-color: #f1f3f5;   /* middle grey */
+  background-color: #f3f4f6;   /* middle grey */
 }
 
 .section-subtitle {
@@ -337,7 +340,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 50px;
+  gap: 40px;
   align-items: center;
 }
 
@@ -365,4 +368,10 @@ footer {
   font-size: 0.9rem;
   color: #6c757d;
 }
+
+
+html {
+  scroll-behavior: smooth;
+}
+
 
