@@ -326,14 +326,54 @@ const scheduleData = {
     {time: "17:15-18:00", session: "Talk 7", type:"talk"}
   ],
   day2: [
-    {time: "08:30-09:15", session: "Talk 8", type:"talk"},
-    {time: "09:15-10:00", session: "Talk 9", type:"talk"},
-    {time: "10:00-10:30", session: "Tea Break", type:"break"},
-    {time: "10:30-11:15", session: "Talk 10", type:"talk"},
-    {time: "11:15-12:00", session: "Talk 11", type:"talk"},
-    {time: "12:00-14:30", session: "Lunch", type:"break"},
-    {time: "14:30-18:00", session: "Free Discussion", type:"talk"}
-  ],
+  {
+    time: "08:30-09:15",
+    session: `
+      <div class="talk-title">Title of the Talk</div>
+      <div class="talk-speaker">Speaker: Prof. XXX</div>
+    `,
+    type: "talk"
+  },
+  {
+    time: "09:15-10:00",
+    session: `
+      <div class="talk-title">Title of the Talk</div>
+      <div class="talk-speaker">Speaker: Prof. XXX</div>
+    `,
+    type: "talk"
+  },
+  {
+    time: "10:00-10:30",
+    session: "Tea Break",
+    type: "break"
+  },
+  {
+    time: "10:30-11:15",
+    session: `
+      <div class="talk-title">Title of the Talk</div>
+      <div class="talk-speaker">Speaker: Prof. XXX</div>
+    `,
+    type: "talk"
+  },
+  {
+    time: "11:15-12:00",
+    session: `
+      <div class="talk-title">Title of the Talk</div>
+      <div class="talk-speaker">Speaker: Prof. XXX</div>
+    `,
+    type: "talk"
+  },
+  {
+    time: "12:00-14:30",
+    session: "Lunch",
+    type: "break"
+  },
+  {
+    time: "14:30-18:00",
+    session: "Free Discussion",
+    type: "talk"
+  }
+],
   day3: [
     {time: "08:30-09:15", session: "Talk 12", type:"talk"},
     {time: "09:15-10:00", session: "Talk 13", type:"talk"},
