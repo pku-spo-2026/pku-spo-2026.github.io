@@ -313,18 +313,83 @@ window.addEventListener("scroll", updateNavbar);
 <script>
 const scheduleData = {
   day1: [
-    {time: "09:00-09:15", session: "Opening Ceremony", type:"talk"},
-    {time: "09:15-10:00", session: "Talk 1", type:"talk"},
-    {time: "10:00-10:30", session: "Group Photo and Tea Break", type:"break"},
-    {time: "10:30-11:15", session: "Talk 2", type:"talk"},
-    {time: "11:15-12:00", session: "Talk 3", type:"talk"},
-    {time: "12:00-14:30", session: "Lunch", type:"break"},
-    {time: "14:30-15:15", session: "Talk 4", type:"talk"},
-    {time: "15:15-16:00", session: "Talk 5", type:"talk"},
-    {time: "16:00-16:30", session: "Tea Break", type:"break"},
-    {time: "16:30-17:15", session: "Talk 6", type:"talk"},
-    {time: "17:15-18:00", session: "Talk 7", type:"talk"}
-  ],
+  {
+    time: "09:00-09:15",
+    session: "Opening Ceremony",
+    type: "talk"
+  },
+  {
+    time: "09:15-10:00",
+    session: `
+      <div class="talk-title">Title of the Talk</div>
+      <div class="talk-speaker">Speaker: José M. F. Moura</div>
+    `,
+    type: "talk"
+  },
+  {
+    time: "10:00-10:30",
+    session: "Group Photo and Tea Break",
+    type: "break"
+  },
+  {
+    time: "10:30-11:15",
+    session: `
+      <div class="talk-title">Title of the Talk</div>
+      <div class="talk-speaker">Speaker: Zhi-Quan (Tom) Luo</div>
+    `,
+    type: "talk"
+  },
+  {
+    time: "11:15-12:00",
+    session: `
+      <div class="talk-title">Title of the Talk</div>
+      <div class="talk-speaker">Speaker: Alejandro Ribeiro</div>
+    `,
+    type: "talk"
+  },
+  {
+    time: "12:00-14:30",
+    session: "Lunch",
+    type: "break"
+  },
+  {
+    time: "14:30-15:15",
+    session: `
+      <div class="talk-title">Title of the Talk</div>
+      <div class="talk-speaker">Speaker: Wing-Kin Ma</div>
+    `,
+    type: "talk"
+  },
+  {
+    time: "15:15-16:00",
+    session: `
+      <div class="talk-title">Title of the Talk</div>
+      <div class="talk-speaker">Speaker: Tianyi Chen</div>
+    `,
+    type: "talk"
+  },
+  {
+    time: "16:00-16:30",
+    session: "Tea Break",
+    type: "break"
+  },
+  {
+    time: "16:30-17:15",
+    session: `
+      <div class="talk-title">Title of the Talk</div>
+      <div class="talk-speaker">Speaker: Gesualdo Scutari</div>
+    `,
+    type: "talk"
+  },
+  {
+    time: "17:15-18:00",
+    session: `
+      <div class="talk-title">Title of the Talk</div>
+      <div class="talk-speaker">Speaker: Kun Yuan</div>
+    `,
+    type: "talk"
+  }
+],
   day2: [
   {
     time: "08:30-09:15",
