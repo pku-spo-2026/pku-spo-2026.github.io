@@ -90,7 +90,7 @@
         
           <tr class="break"><td>16:00-16:30</td><td>Tea Break</td></tr>
 
-          <tr class="talk"><td>16:30-17:15</td><td><div class="talk-title">Title of the Talk</div><div class="talk-speaker">Speaker: Aldo</div></td></tr>
+          <tr class="talk"><td>16:30-17:15</td><td><div class="talk-title">Title of the Talk</div><div class="talk-speaker">Speaker: Gesualdo Scutari</div></td></tr>
           <tr class="talk"><td>17:15-18:00</td><td><div class="talk-title">Title of the Talk</div><div class="talk-speaker">Speaker: Kun Yuan</div></td></tr>
         </tbody>
       </table>
@@ -330,7 +330,7 @@ const scheduleData = {
     time: "08:30-09:15",
     session: `
       <div class="talk-title">Title of the Talk</div>
-      <div class="talk-speaker">Speaker: Prof. XXX</div>
+      <div class="talk-speaker">Speaker: Zhi Tian</div>
     `,
     type: "talk"
   },
@@ -338,7 +338,7 @@ const scheduleData = {
     time: "09:15-10:00",
     session: `
       <div class="talk-title">Title of the Talk</div>
-      <div class="talk-speaker">Speaker: Prof. XXX</div>
+      <div class="talk-speaker">Speaker: Vincent Y. F. Tan</div>
     `,
     type: "talk"
   },
@@ -351,7 +351,7 @@ const scheduleData = {
     time: "10:30-11:15",
     session: `
       <div class="talk-title">Title of the Talk</div>
-      <div class="talk-speaker">Speaker: Prof. XXX</div>
+      <div class="talk-speaker">Speaker: Anna Scaglione</div>
     `,
     type: "talk"
   },
@@ -359,7 +359,7 @@ const scheduleData = {
     time: "11:15-12:00",
     session: `
       <div class="talk-title">Title of the Talk</div>
-      <div class="talk-speaker">Speaker: Prof. XXX</div>
+      <div class="talk-speaker">Speaker: Lei Wu</div>
     `,
     type: "talk"
   },
@@ -370,23 +370,59 @@ const scheduleData = {
   },
   {
     time: "14:30-18:00",
-    session: "Free Discussion",
+    session: "Free Discussion & Social Events",
     type: "talk"
   }
 ],
   day3: [
-    {time: "08:30-09:15", session: "Talk 12", type:"talk"},
-    {time: "09:15-10:00", session: "Talk 13", type:"talk"},
-    {time: "10:00-10:30", session: "Tea Break", type:"break"},
-    {time: "10:30-11:15", session: "Talk 14", type:"talk"},
-    {time: "11:15-12:00", session: "Talk 15", type:"talk"},
-    {time: "12:00-14:30", session: "Lunch", type:"break"},
-    {time: "14:30-15:15", session: "Talk 16", type:"talk"},
-    {time: "15:15-16:00", session: "Talk 17", type:"talk"},
-    {time: "16:00-16:30", session: "Tea Break", type:"break"},
-    {time: "16:30-17:15", session: "Talk 18", type:"talk"},
-    {time: "17:15-18:00", session: "Talk 19", type:"talk"}
-  ]
+  {
+    time: "08:30-09:15",
+    session: `
+      <div class="talk-title">Title of the Talk</div>
+      <div class="talk-speaker">Speaker: Stefan Vlaski</div>
+    `,
+    type: "talk"
+  },
+  {
+    time: "09:15-10:00",
+    session: `
+      <div class="talk-title">Title of the Talk</div>
+      <div class="talk-speaker">Speaker: Jinming Xu</div>
+    `,
+    type: "talk"
+  },
+  {
+    time: "10:00-10:30",
+    session: "Tea Break",
+    type: "break"
+  },
+  {
+    time: "10:30-11:15",
+    session: `
+      <div class="talk-title">Title of the Talk</div>
+      <div class="talk-speaker">Speaker: Roula Nassif</div>
+    `,
+    type: "talk"
+  },
+  {
+    time: "11:15-12:00",
+    session: `
+      <div class="talk-title">Title of the Talk</div>
+      <div class="talk-speaker">Speaker: Ali H. Sayed</div>
+    `,
+    type: "talk"
+  },
+  {
+    time: "12:00-14:30",
+    session: "Lunch",
+    type: "break"
+  },
+  {
+    time: "14:30-18:00",
+    session: "Free Discussion & Social Events",
+    type: "talk"
+  }
+]
 };
 
 const tabs = document.querySelectorAll(".schedule-tab");
